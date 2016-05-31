@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @graduate.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @graduate.last_name %>
+</p>
+
+<p>
+  <strong>Cohort:</strong>
+  <%= @graduate.cohort %>
+</p>
+
+<p>
+  <strong>Current job:</strong>
+  <%= @graduate.current_job %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @graduate.bio %>
+</p>
+
+<p>
+  <strong>News:</strong>
+  <%= @graduate.news %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @graduate.website %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @graduate.picture %>
+</p>
+
+<%= link_to 'Edit', edit_graduate_path(@graduate) %> |
+<%= link_to 'Back', graduates_path %>

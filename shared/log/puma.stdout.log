@@ -1,0 +1,1044 @@
+=== puma startup: 2016-05-19 13:16:01 -0500 ===
+[23642] * Starting control server on unix:///var/folders/3v/frp18j5900j7ffd5chfggg384c2j0_/T/puma-status-1463681761846-23642
+[23642] - Worker 3 (pid: 23646) booted, phase: 0
+[23642] - Worker 2 (pid: 23645) booted, phase: 0
+[23642] - Worker 0 (pid: 23643) booted, phase: 0
+[23642] - Worker 1 (pid: 23644) booted, phase: 0
+[23642] - Gracefully shutting down workers...
+[23642] === puma shutdown: 2016-05-19 13:16:52 -0500 ===
+[23642] - Goodbye!
+=== puma startup: 2016-05-19 13:42:14 -0500 ===
+[25267] * Starting control server on unix:///var/folders/3v/frp18j5900j7ffd5chfggg384c2j0_/T/puma-status-1463683334023-25267
+[25267] - Worker 2 (pid: 25270) booted, phase: 0
+[25267] - Worker 3 (pid: 25271) booted, phase: 0
+[25267] - Worker 0 (pid: 25268) booted, phase: 0
+[25267] - Worker 1 (pid: 25269) booted, phase: 0
+[25267] - Gracefully shutting down workers...
+[25267] === puma shutdown: 2016-05-19 13:44:01 -0500 ===
+[25267] - Goodbye!
+=== puma startup: 2016-05-19 13:44:18 -0500 ===
+[25360] * Starting control server on unix:///var/folders/3v/frp18j5900j7ffd5chfggg384c2j0_/T/puma-status-1463683458050-25360
+[25360] - Worker 3 (pid: 25364) booted, phase: 0
+[25360] - Worker 0 (pid: 25361) booted, phase: 0
+[25360] - Worker 1 (pid: 25362) booted, phase: 0
+[25360] - Worker 2 (pid: 25363) booted, phase: 0
+[25360] - Gracefully shutting down workers...
+[25360] === puma shutdown: 2016-05-19 14:13:38 -0500 ===
+[25360] - Goodbye!
+=== puma startup: 2016-05-19 14:17:41 -0500 ===
+[27010] * Starting control server on unix:///var/folders/3v/frp18j5900j7ffd5chfggg384c2j0_/T/puma-status-1463685461336-27010
+[27010] - Worker 1 (pid: 27012) booted, phase: 0
+[27010] - Worker 0 (pid: 27011) booted, phase: 0
+[27010] - Worker 3 (pid: 27014) booted, phase: 0
+[27010] - Worker 2 (pid: 27013) booted, phase: 0
+=== puma startup: 2016-05-19 14:24:23 -0500 ===
+[27549] * Starting control server on unix:///var/folders/3v/frp18j5900j7ffd5chfggg384c2j0_/T/puma-status-1463685863630-27549
+[27549] - Worker 0 (pid: 27551) booted, phase: 0
+[27549] - Worker 1 (pid: 27552) booted, phase: 0
+[27549] - Worker 2 (pid: 27553) booted, phase: 0
+[27549] - Worker 3 (pid: 27554) booted, phase: 0
+
+
+Started GET "/grades" for ::1 at 2016-05-19 14:24:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GradesController#index as HTML
+  [1m[35mGrade Load (0.2ms)[0m  SELECT "grades".* FROM "grades"
+  [1m[36mGraduate Load (0.2ms)[0m  [1mSELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered grades/index.html.erb within layouts/application (79.1ms)
+Completed 200 OK in 1418ms (Views: 1403.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/grades" for ::1 at 2016-05-19 14:24:32 -0500
+  [1m[35m (0.2ms)[0m  SELECT "grades"."value" FROM "grades"
+[27549] - Gracefully shutting down workers...
+[27549] === puma shutdown: 2016-05-19 14:25:51 -0500 ===
+[27549] - Goodbye!
+Exiting
+=== puma startup: 2016-05-19 14:25:58 -0500 ===
+[27599] * Starting control server on unix:///var/folders/3v/frp18j5900j7ffd5chfggg384c2j0_/T/puma-status-1463685958164-27599
+[27599] - Worker 1 (pid: 27639) booted, phase: 0
+[27599] - Worker 2 (pid: 27640) booted, phase: 0
+[27599] - Worker 3 (pid: 27641) booted, phase: 0
+[27599] - Worker 0 (pid: 27637) booted, phase: 0
+
+
+Started GET "/graduates" for ::1 at 2016-05-19 14:26:50 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GraduatesController#index as HTML
+  [1m[35mGraduate Load (0.2ms)[0m  SELECT "graduates".* FROM "graduates"
+  Rendered graduates/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 1112ms (Views: 1102.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/grades" for ::1 at 2016-05-19 14:26:52 -0500
+  [1m[36m (0.2ms)[0m  [1mSELECT "grades"."value" FROM "grades"[0m
+[27599] - Gracefully shutting down workers...
+[27599] === puma shutdown: 2016-05-19 14:27:41 -0500 ===
+[27599] - Goodbye!
+Exiting
+=== puma startup: 2016-05-19 14:27:50 -0500 ===
+[27686] * Starting control server on unix:///var/folders/3v/frp18j5900j7ffd5chfggg384c2j0_/T/puma-status-1463686070456-27686
+[27686] - Worker 1 (pid: 27688) booted, phase: 0
+[27686] - Worker 0 (pid: 27687) booted, phase: 0
+[27686] - Worker 3 (pid: 27690) booted, phase: 0
+[27686] - Worker 2 (pid: 27689) booted, phase: 0
+
+
+Started GET "/" for ::1 at 2016-05-19 14:27:58 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GraduatesController#index as HTML
+  [1m[35mGraduate Load (0.2ms)[0m  SELECT "graduates".* FROM "graduates"
+  Rendered graduates/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 899ms (Views: 888.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/application.self-01b1f22db94f672562e91d2401ea4a9ab056f9c23a9a53f7f1154f4482d8d8a6.css?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/d3.self-850dec129b5f20c85fb8f10f3afae50c6efdfc9981c2952916d4a850bf18afee.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/chart.self-20a4c96335719007cbcd467e0a9d5c0c4c23dbe3227f4e50ad343ba54a0dbe47.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/graduates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/graduates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/scaffolds.self-27c487645d959b392de1564028235c1db2358ab2222cbdc524ca56b6a86ff8d5.css?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for ::1 at 2016-05-19 14:27:59 -0500
+
+
+Started GET "/api/v1/grades" for ::1 at 2016-05-19 14:28:00 -0500
+  [1m[35m (0.1ms)[0m  SELECT "grades"."value" FROM "grades"
+[27686] - Gracefully shutting down workers...
+[27686] === puma shutdown: 2016-05-19 14:28:10 -0500 ===
+[27686] - Goodbye!
+Exiting
+=== puma startup: 2016-05-20 13:54:15 -0500 ===
+[83046] * Starting control server on unix:///var/folders/xt/htqfz2g53ss37_n6xcs74sdc0000gn/T/puma-status-1463770455221-83046
+[83046] - Worker 2 (pid: 83049) booted, phase: 0
+[83046] - Worker 1 (pid: 83048) booted, phase: 0
+[83046] - Worker 0 (pid: 83047) booted, phase: 0
+[83046] - Worker 3 (pid: 83050) booted, phase: 0
+
+
+Started GET "/" for ::1 at 2016-05-20 13:54:20 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GraduatesController#index as HTML
+  [1m[35mGraduate Load (0.5ms)[0m  SELECT "graduates".* FROM "graduates"
+  Rendered graduates/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 11057ms (Views: 11045.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/scaffolds.self-4b8828322ff6dea5933653f277af70ac85ffe8c34291ed5429fd66cf26dc4599.css?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/application.self-2fc88159fd244383d3a7ef964b4eb1b639c1ea15d2f1bf239e2100487ae31974.css?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/d3.self-850dec129b5f20c85fb8f10f3afae50c6efdfc9981c2952916d4a850bf18afee.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/chart.self-20a4c96335719007cbcd467e0a9d5c0c4c23dbe3227f4e50ad343ba54a0dbe47.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/graduates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/assets/graduates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-20 13:54:32 -0500
+
+
+Started GET "/api/v1/grades" for ::1 at 2016-05-20 13:54:32 -0500
+  [1m[35m (0.4ms)[0m  SELECT "grades"."value" FROM "grades"
+
+
+Started GET "/graduates/new" for ::1 at 2016-05-20 13:54:43 -0500
+Processing by GraduatesController#new as HTML
+  Rendered graduates/_form.html.erb (19.0ms)
+  Rendered graduates/new.html.erb within layouts/application (40.3ms)
+Completed 200 OK in 284ms (Views: 263.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/graduates" for ::1 at 2016-05-20 13:54:51 -0500
+Processing by GraduatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pJcMOTkPrmATleTazGHYDsjvvWdcD1DceoLneW38BMKCJAtPxtZJT36Hr6RTXloW6mGccVyXXEDpz6fuGq/0pA==", "graduate"=>{"first_name"=>"fkñkñl", "last_name"=>"kñklñk", "cohort"=>"lkñlk", "current_job"=>"lñkñlk", "bio"=>"ñlk", "news"=>"ñlkñlk", "website"=>"ñlkñl", "picture"=>"kñlk"}, "commit"=>"Create Graduate"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "graduates" ("first_name", "last_name", "cohort", "current_job", "bio", "news", "website", "picture", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "fkñkñl"], ["last_name", "kñklñk"], ["cohort", "lkñlk"], ["current_job", "lñkñlk"], ["bio", "ñlk"], ["news", "ñlkñlk"], ["website", "ñlkñl"], ["picture", "kñlk"], ["created_at", "2016-05-20 18:54:51.612343"], ["updated_at", "2016-05-20 18:54:51.612343"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/graduates/3
+Completed 302 Found in 10ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/graduates/3" for ::1 at 2016-05-20 13:54:51 -0500
+Processing by GraduatesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGraduate Load (0.2ms)[0m  SELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered graduates/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 86ms (Views: 79.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/graduates/api/v1/grades" for ::1 at 2016-05-20 13:54:51 -0500
+
+ActionController::RoutingError (No route matches [GET] "/graduates/api/v1/grades"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `call'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (27.6ms)
+
+
+Started GET "/graduates" for ::1 at 2016-05-20 13:54:57 -0500
+Processing by GraduatesController#index as HTML
+  [1m[36mGraduate Load (0.2ms)[0m  [1mSELECT "graduates".* FROM "graduates"[0m
+  Rendered graduates/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 70ms (Views: 69.2ms | ActiveRecord: 0.2ms)
+[83046] - Gracefully shutting down workers...
+[83046] === puma shutdown: 2016-05-20 13:55:00 -0500 ===
+[83046] - Goodbye!
+Exiting
+=== puma startup: 2016-05-20 13:55:46 -0500 ===
+[83070] * Starting control server on unix:///var/folders/xt/htqfz2g53ss37_n6xcs74sdc0000gn/T/puma-status-1463770546620-83070
+[83070] - Worker 3 (pid: 83074) booted, phase: 0
+[83070] - Worker 2 (pid: 83073) booted, phase: 0
+[83070] - Worker 0 (pid: 83071) booted, phase: 0
+[83070] - Worker 1 (pid: 83072) booted, phase: 0
+
+
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=1463770547638-8" for ::1 at 2016-05-20 13:55:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `call'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.2ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.9ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (137.5ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.7ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (143.1ms)
+
+
+Started GET "/" for ::1 at 2016-05-20 13:55:53 -0500
+Processing by GraduatesController#index as HTML
+  [1m[35mGraduate Load (0.2ms)[0m  SELECT "graduates".* FROM "graduates"
+  Rendered graduates/index.html.erb within layouts/application (17.2ms)
+
+
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=1463770553166-9" for ::1 at 2016-05-20 13:55:53 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `call'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.5ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (19.3ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (225.9ms)
+Completed 200 OK in 550ms (Views: 547.3ms | ActiveRecord: 0.7ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (91.6ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (205.9ms)
+
+
+Started GET "/api/v1/grades" for ::1 at 2016-05-20 13:55:53 -0500
+  [1m[36m (0.2ms)[0m  [1mSELECT "grades"."value" FROM "grades"[0m
+[83070] - Gracefully shutting down workers...
+[83070] === puma shutdown: 2016-05-20 13:57:49 -0500 ===
+[83070] - Goodbye!
+Exiting
+=== puma startup: 2016-05-20 13:58:52 -0500 ===
+[83089] * Starting control server on unix:///var/folders/xt/htqfz2g53ss37_n6xcs74sdc0000gn/T/puma-status-1463770732589-83089
+[83089] - Worker 0 (pid: 83091) booted, phase: 0
+[83089] - Worker 1 (pid: 83092) booted, phase: 0
+[83089] - Worker 2 (pid: 83093) booted, phase: 0
+[83089] - Worker 3 (pid: 83094) booted, phase: 0
+
+
+Started GET "/" for ::1 at 2016-05-20 13:58:58 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GraduatesController#index as HTML
+  [1m[35mGraduate Load (0.2ms)[0m  SELECT "graduates".* FROM "graduates"
+  Rendered graduates/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 607ms (Views: 594.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/application.self-2fc88159fd244383d3a7ef964b4eb1b639c1ea15d2f1bf239e2100487ae31974.css?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/d3.self-850dec129b5f20c85fb8f10f3afae50c6efdfc9981c2952916d4a850bf18afee.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/chart.self-20a4c96335719007cbcd467e0a9d5c0c4c23dbe3227f4e50ad343ba54a0dbe47.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/graduates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/graduates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/assets/scaffolds.self-4b8828322ff6dea5933653f277af70ac85ffe8c34291ed5429fd66cf26dc4599.css?body=1" for ::1 at 2016-05-20 13:58:59 -0500
+
+
+Started GET "/api/v1/grades" for ::1 at 2016-05-20 13:58:59 -0500
+  [1m[35m (0.1ms)[0m  SELECT "grades"."value" FROM "grades"
+
+
+Started GET "/grades" for ::1 at 2016-05-20 13:59:09 -0500
+Processing by GradesController#index as HTML
+  [1m[36mGrade Load (0.2ms)[0m  [1mSELECT "grades".* FROM "grades"[0m
+  [1m[35mGraduate Load (0.2ms)[0m  SELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered grades/index.html.erb within layouts/application (49.6ms)
+Completed 200 OK in 281ms (Views: 270.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/grades" for ::1 at 2016-05-20 13:59:09 -0500
+  [1m[36m (0.3ms)[0m  [1mSELECT "grades"."value" FROM "grades"[0m
+
+
+Started GET "/grades/new" for ::1 at 2016-05-20 13:59:16 -0500
+Processing by GradesController#new as HTML
+  Rendered grades/_form.html.erb (17.3ms)
+  Rendered grades/new.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/grades" for ::1 at 2016-05-20 13:59:22 -0500
+Processing by GradesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tVnMAvqf2gYbMPKxC/GDPTA+vK0ZeBFxR/Dowlav/biT6st0BUY9KXYiuc+UzgElErCduxngHe3UvahVIfwN3g==", "grade"=>{"value"=>"5", "period"=>"ñlkñlk", "graduate_id"=>"1"}, "commit"=>"Create Grade"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "grades" ("value", "period", "graduate_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["value", 5], ["period", "ñlkñlk"], ["graduate_id", 1], ["created_at", "2016-05-20 18:59:22.762320"], ["updated_at", "2016-05-20 18:59:22.762320"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/grades/6
+Completed 302 Found in 8ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/grades/6" for ::1 at 2016-05-20 13:59:22 -0500
+Processing by GradesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGrade Load (0.2ms)[0m  [1mSELECT  "grades".* FROM "grades" WHERE "grades"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mGraduate Load (0.1ms)[0m  SELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered grades/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 73ms (Views: 68.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/grades/api/v1/grades" for ::1 at 2016-05-20 13:59:22 -0500
+
+ActionController::RoutingError (No route matches [GET] "/grades/api/v1/grades"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `call'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.2.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (25.2ms)
+
+
+Started GET "/grades" for ::1 at 2016-05-20 13:59:24 -0500
+Processing by GradesController#index as HTML
+  [1m[36mGrade Load (2.1ms)[0m  [1mSELECT "grades".* FROM "grades"[0m
+  [1m[35mGraduate Load (0.1ms)[0m  SELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered grades/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 162ms (Views: 159.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/grades" for ::1 at 2016-05-20 13:59:28 -0500
+Processing by GradesController#index as HTML
+  [1m[35mGrade Load (0.2ms)[0m  SELECT "grades".* FROM "grades"
+  [1m[36mGraduate Load (0.1ms)[0m  [1mSELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "graduates".* FROM "graduates" WHERE "graduates"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered grades/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/grades.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/graduates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/scaffolds.self-4b8828322ff6dea5933653f277af70ac85ffe8c34291ed5429fd66cf26dc4599.css?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/d3.self-850dec129b5f20c85fb8f10f3afae50c6efdfc9981c2952916d4a850bf18afee.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/graduates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/chart.self-20a4c96335719007cbcd467e0a9d5c0c4c23dbe3227f4e50ad343ba54a0dbe47.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/grades.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+
+
+Started GET "/assets/application.self-2fc88159fd244383d3a7ef964b4eb1b639c1ea15d2f1bf239e2100487ae31974.css?body=1" for ::1 at 2016-05-20 13:59:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/api/v1/grades" for ::1 at 2016-05-20 13:59:29 -0500
+  [1m[35m (0.2ms)[0m  SELECT "grades"."value" FROM "grades"
+[83089] - Gracefully shutting down workers...
+[83089] === puma shutdown: 2016-05-20 13:59:36 -0500 ===
+[83089] - Goodbye!
+Exiting
+=== puma startup: 2016-05-20 13:59:49 -0500 ===
+[83097] * Starting control server on unix:///var/folders/xt/htqfz2g53ss37_n6xcs74sdc0000gn/T/puma-status-1463770789374-83097
+[83097] - Worker 1 (pid: 83099) booted, phase: 0
+[83097] - Worker 0 (pid: 83098) booted, phase: 0
+[83097] - Worker 2 (pid: 83100) booted, phase: 0
+[83097] - Worker 3 (pid: 83101) booted, phase: 0
+[83097] - Gracefully shutting down workers...
+[83097] === puma shutdown: 2016-05-20 14:00:14 -0500 ===
+[83097] - Goodbye!
+Exiting
+=== puma startup: 2016-05-20 14:01:20 -0500 ===
+[83126] * Starting control server on unix:///var/folders/xt/htqfz2g53ss37_n6xcs74sdc0000gn/T/puma-status-1463770880210-83126
+[83126] - Worker 0 (pid: 83127) booted, phase: 0
+[83126] - Worker 2 (pid: 83129) booted, phase: 0
+[83126] - Worker 1 (pid: 83128) booted, phase: 0
+[83126] - Worker 3 (pid: 83130) booted, phase: 0
+[83126] - Gracefully shutting down workers...
+[83126] === puma shutdown: 2016-05-20 14:03:42 -0500 ===
+[83126] - Goodbye!
+Exiting
+=== puma startup: 2016-05-20 14:04:57 -0500 ===
+[83156] * Starting control server on unix:///var/folders/xt/htqfz2g53ss37_n6xcs74sdc0000gn/T/puma-status-1463771097836-83156
+[83156] - Worker 0 (pid: 83157) booted, phase: 0
+[83156] - Worker 1 (pid: 83158) booted, phase: 0
+[83156] - Worker 2 (pid: 83159) booted, phase: 0
+[83156] - Worker 3 (pid: 83160) booted, phase: 0
+[83156] - Gracefully shutting down workers...
+[83156] === puma shutdown: 2016-05-20 14:06:18 -0500 ===
+[83156] - Goodbye!
+Exiting
+=== puma startup: 2016-05-20 14:07:36 -0500 ===
+[83188] * Starting control server on unix:///var/folders/xt/htqfz2g53ss37_n6xcs74sdc0000gn/T/puma-status-1463771256074-83188
+[83188] - Worker 2 (pid: 83191) booted, phase: 0
+[83188] - Worker 0 (pid: 83189) booted, phase: 0
+[83188] - Worker 3 (pid: 83192) booted, phase: 0
+[83188] - Worker 1 (pid: 83190) booted, phase: 0
+[83188] - Gracefully shutting down workers...
+[83188] === puma shutdown: 2016-05-20 14:07:56 -0500 ===
+[83188] - Goodbye!
+=== puma startup: 2016-05-20 14:08:20 -0500 ===
+[83380] * Starting control server on unix:///var/folders/xt/htqfz2g53ss37_n6xcs74sdc0000gn/T/puma-status-1463771300991-83380
+[83380] - Worker 3 (pid: 83384) booted, phase: 0
+[83380] - Worker 2 (pid: 83383) booted, phase: 0
+[83380] - Worker 0 (pid: 83381) booted, phase: 0
+[83380] - Worker 1 (pid: 83382) booted, phase: 0
+[83380] - Gracefully shutting down workers...
+[83380] === puma shutdown: 2016-05-20 14:30:34 -0500 ===
+[83380] - Goodbye!
+=== puma startup: 2016-05-20 14:36:25 -0500 ===
+[96808] * Starting control server on unix:///var/folders/xt/htqfz2g53ss37_n6xcs74sdc0000gn/T/puma-status-1463772985500-96808
+[96808] - Worker 2 (pid: 96811) booted, phase: 0
+[96808] - Worker 1 (pid: 96810) booted, phase: 0
+[96808] - Worker 3 (pid: 96812) booted, phase: 0
+[96808] - Worker 0 (pid: 96809) booted, phase: 0
+=== puma startup: 2016-05-24 19:37:56 -0500 ===
+[3678] * Starting control server on unix:///var/folders/xt/htqfz2g53ss37_n6xcs74sdc0000gn/T/puma-status-1464136676647-3678
+[3678] - Worker 3 (pid: 3682) booted, phase: 0
+[3678] - Worker 1 (pid: 3680) booted, phase: 0
+[3678] - Worker 0 (pid: 3679) booted, phase: 0
+[3678] - Worker 2 (pid: 3681) booted, phase: 0
+[3678] - Gracefully shutting down workers...
+[3678] === puma shutdown: 2016-05-24 19:46:18 -0500 ===
+[3678] - Goodbye!
+=== puma startup: 2016-05-24 19:46:19 -0500 ===
+[3748] * Starting control server on unix:///var/folders/xt/htqfz2g53ss37_n6xcs74sdc0000gn/T/puma-status-1464137179790-3748
+[3748] - Worker 2 (pid: 3751) booted, phase: 0
+[3748] - Worker 0 (pid: 3749) booted, phase: 0
+[3748] - Worker 1 (pid: 3750) booted, phase: 0
+[3748] - Worker 3 (pid: 3752) booted, phase: 0
+[3748] ! Terminating timed out worker: 3749
+[3748] ! Terminating timed out worker: 3750
+[3748] ! Terminating timed out worker: 3751
+[3748] ! Terminating timed out worker: 3752
+[3748] ! Out-of-sync worker list, no 3752 worker
+[3748] ! Out-of-sync worker list, no 3751 worker
+[3748] ! Out-of-sync worker list, no 3750 worker
+[3748] ! Out-of-sync worker list, no 3749 worker
+[3748] - Worker 3 (pid: 4410) booted, phase: 0
+[3748] - Worker 2 (pid: 4409) booted, phase: 0
+[3748] - Worker 0 (pid: 4407) booted, phase: 0
+[3748] - Worker 1 (pid: 4408) booted, phase: 0
+[3748] ! Terminating timed out worker: 4407
+[3748] ! Terminating timed out worker: 4408
+[3748] ! Terminating timed out worker: 4410
+[3748] ! Out-of-sync worker list, no 4410 worker
+[3748] ! Terminating timed out worker: 4409
+[3748] ! Terminating timed out worker: 4424
+[3748] ! Terminating timed out worker: 4425
+[3748] ! Terminating timed out worker: 4426
+[3748] - Worker 0 (pid: 4436) booted, phase: 0
+[3748] - Worker 2 (pid: 4438) booted, phase: 0
+[3748] - Worker 1 (pid: 4437) booted, phase: 0
+[3748] - Worker 3 (pid: 4439) booted, phase: 0
+[3748] ! Terminating timed out worker: 4436
+[3748] ! Terminating timed out worker: 4437
+[3748] ! Terminating timed out worker: 4438
+[3748] ! Terminating timed out worker: 4439
+[3748] ! Out-of-sync worker list, no 4436 worker
+[3748] ! Out-of-sync worker list, no 4437 worker
+[3748] ! Out-of-sync worker list, no 4439 worker
+[3748] ! Out-of-sync worker list, no 4438 worker
+[3748] - Worker 1 (pid: 8724) booted, phase: 0
+[3748] - Worker 3 (pid: 8726) booted, phase: 0
+[3748] - Worker 0 (pid: 8723) booted, phase: 0
+[3748] - Worker 2 (pid: 8725) booted, phase: 0
+[3748] ! Terminating timed out worker: 8723
+[3748] ! Terminating timed out worker: 8724
+[3748] ! Terminating timed out worker: 8725
+[3748] ! Out-of-sync worker list, no 8723 worker
+[3748] ! Out-of-sync worker list, no 8724 worker
+[3748] - Worker 0 (pid: 8769) booted, phase: 0
+[3748] - Worker 1 (pid: 8770) booted, phase: 0
+[3748] - Worker 2 (pid: 8771) booted, phase: 0
+[3748] ! Terminating timed out worker: 8726
+[3748] ! Terminating timed out worker: 8770
+[3748] ! Terminating timed out worker: 8771
+[3748] - Worker 3 (pid: 8784) booted, phase: 0
+[3748] - Worker 1 (pid: 8782) booted, phase: 0
+[3748] - Worker 2 (pid: 8783) booted, phase: 0
+[3748] ! Terminating timed out worker: 8769
+[3748] ! Terminating timed out worker: 8782
+[3748] ! Terminating timed out worker: 8784
+[3748] ! Out-of-sync worker list, no 8784 worker
+[3748] ! Out-of-sync worker list, no 8782 worker
+[3748] - Worker 1 (pid: 8879) booted, phase: 0
+[3748] - Worker 0 (pid: 8878) booted, phase: 0
+[3748] - Worker 3 (pid: 8880) booted, phase: 0
+[3748] ! Terminating timed out worker: 8783
+[3748] ! Terminating timed out worker: 8878
+[3748] ! Terminating timed out worker: 8879
+[3748] ! Terminating timed out worker: 8880
+[3748] - Worker 3 (pid: 8890) booted, phase: 0
+[3748] - Worker 1 (pid: 8888) booted, phase: 0
+[3748] - Worker 2 (pid: 8889) booted, phase: 0
+[3748] - Worker 0 (pid: 8887) booted, phase: 0
+[3748] ! Terminating timed out worker: 8887
+[3748] ! Terminating timed out worker: 8889
+[3748] ! Terminating timed out worker: 8890
+[3748] - Worker 2 (pid: 9375) booted, phase: 0
+[3748] - Worker 3 (pid: 9376) booted, phase: 0
+[3748] - Worker 0 (pid: 9374) booted, phase: 0
+[3748] ! Terminating timed out worker: 9374
+[3748] ! Terminating timed out worker: 9375
+[3748] ! Terminating timed out worker: 9376
+[3748] - Worker 2 (pid: 9497) booted, phase: 0
+[3748] - Worker 0 (pid: 9496) booted, phase: 0
+[3748] - Worker 3 (pid: 9498) booted, phase: 0
+[3748] ! Terminating timed out worker: 8888
+[3748] ! Terminating timed out worker: 9496
+[3748] ! Terminating timed out worker: 9498
+[3748] ! Out-of-sync worker list, no 9496 worker
+[3748] - Worker 1 (pid: 9522) booted, phase: 0
+[3748] - Worker 0 (pid: 9521) booted, phase: 0
+[3748] - Worker 3 (pid: 9523) booted, phase: 0
+[3748] ! Terminating timed out worker: 9497
+[3748] ! Terminating timed out worker: 9521
+[3748] ! Terminating timed out worker: 9522
+[3748] ! Terminating timed out worker: 9523
+[3748] ! Out-of-sync worker list, no 9497 worker
+[3748] ! Out-of-sync worker list, no 9521 worker
+[3748] ! Out-of-sync worker list, no 9522 worker
+[3748] ! Out-of-sync worker list, no 9523 worker
+[3748] - Worker 2 (pid: 14427) booted, phase: 0
+[3748] - Worker 1 (pid: 14426) booted, phase: 0
+[3748] - Worker 0 (pid: 14425) booted, phase: 0
+[3748] - Worker 3 (pid: 14428) booted, phase: 0
+[3748] ! Terminating timed out worker: 14425
+[3748] ! Terminating timed out worker: 14427
+[3748] ! Terminating timed out worker: 14428
+[3748] ! Out-of-sync worker list, no 14427 worker
+[3748] - Worker 2 (pid: 14538) booted, phase: 0
+[3748] - Worker 3 (pid: 14539) booted, phase: 0
+[3748] - Worker 0 (pid: 14537) booted, phase: 0
+[3748] ! Terminating timed out worker: 14426
+[3748] ! Terminating timed out worker: 14537
+[3748] ! Terminating timed out worker: 14538
+[3748] ! Terminating timed out worker: 14539
+[3748] ! Out-of-sync worker list, no 14537 worker
+[3748] - Worker 0 (pid: 14547) booted, phase: 0
+[3748] - Worker 1 (pid: 14548) booted, phase: 0
+[3748] - Worker 3 (pid: 14550) booted, phase: 0
+[3748] - Worker 2 (pid: 14549) booted, phase: 0
+[3748] ! Terminating timed out worker: 14547
+[3748] ! Terminating timed out worker: 14548
+[3748] ! Terminating timed out worker: 14549
+[3748] - Worker 2 (pid: 14612) booted, phase: 0
+[3748] - Worker 0 (pid: 14610) booted, phase: 0
+[3748] - Worker 1 (pid: 14611) booted, phase: 0
+[3748] ! Terminating timed out worker: 14610
+[3748] ! Terminating timed out worker: 14611
+[3748] ! Terminating timed out worker: 14612
+[3748] - Worker 1 (pid: 15756) booted, phase: 0
+[3748] - Worker 2 (pid: 15757) booted, phase: 0
+[3748] - Worker 0 (pid: 15755) booted, phase: 0
+[3748] ! Terminating timed out worker: 14550
+[3748] ! Terminating timed out worker: 15755
+[3748] ! Terminating timed out worker: 15757
+[3748] ! Out-of-sync worker list, no 15757 worker
+[3748] ! Out-of-sync worker list, no 15755 worker
+[3748] ! Terminating timed out worker: 15756
+[3748] ! Terminating timed out worker: 15881
+[3748] ! Terminating timed out worker: 15882
+[3748] ! Terminating timed out worker: 15883
+[3748] - Worker 2 (pid: 15894) booted, phase: 0
+[3748] - Worker 1 (pid: 15893) booted, phase: 0
+[3748] - Worker 0 (pid: 15892) booted, phase: 0
+[3748] - Worker 3 (pid: 15895) booted, phase: 0
+[3748] ! Terminating timed out worker: 15892
+[3748] ! Terminating timed out worker: 15893
+[3748] ! Terminating timed out worker: 15895
+[3748] ! Out-of-sync worker list, no 15893 worker
+[3748] ! Terminating timed out worker: 16089
+[3748] ! Terminating timed out worker: 16090
+[3748] ! Terminating timed out worker: 16091
+[3748] - Worker 0 (pid: 16095) booted, phase: 0
+[3748] - Worker 1 (pid: 16096) booted, phase: 0
+[3748] - Worker 3 (pid: 16097) booted, phase: 0
+[3748] ! Terminating timed out worker: 15894
+[3748] ! Terminating timed out worker: 16095
+[3748] ! Terminating timed out worker: 16097
+[3748] ! Out-of-sync worker list, no 16095 worker
+[3748] ! Terminating timed out worker: 16096
+[3748] ! Terminating timed out worker: 16138
+[3748] ! Terminating timed out worker: 16139
+[3748] ! Terminating timed out worker: 16140
+[3748] - Worker 2 (pid: 16147) booted, phase: 0
+[3748] - Worker 3 (pid: 16148) booted, phase: 0
+[3748] - Worker 1 (pid: 16146) booted, phase: 0
+[3748] - Worker 0 (pid: 16145) booted, phase: 0
+[3748] ! Terminating timed out worker: 16145
+[3748] ! Terminating timed out worker: 16146
+[3748] ! Terminating timed out worker: 16147
+[3748] ! Out-of-sync worker list, no 16146 worker
+[3748] - Worker 0 (pid: 16698) booted, phase: 0
+[3748] - Worker 1 (pid: 16699) booted, phase: 0
+[3748] - Worker 2 (pid: 16700) booted, phase: 0
+[3748] ! Terminating timed out worker: 16148
+[3748] ! Terminating timed out worker: 16698
+[3748] ! Terminating timed out worker: 16699
+[3748] ! Terminating timed out worker: 16700
+[3748] ! Out-of-sync worker list, no 16148 worker
+[3748] - Worker 0 (pid: 16717) booted, phase: 0
+[3748] - Worker 1 (pid: 16718) booted, phase: 0
+[3748] - Worker 2 (pid: 16719) booted, phase: 0
+[3748] - Worker 3 (pid: 16721) booted, phase: 0
+[3748] ! Terminating timed out worker: 16717
+[3748] ! Terminating timed out worker: 16719
+[3748] ! Terminating timed out worker: 16721
+[3748] ! Out-of-sync worker list, no 16719 worker
+[3748] - Worker 2 (pid: 16988) booted, phase: 0
+[3748] - Worker 0 (pid: 16987) booted, phase: 0
+[3748] - Worker 3 (pid: 16989) booted, phase: 0
+[3748] ! Terminating timed out worker: 16718
+[3748] ! Terminating timed out worker: 16987
+[3748] ! Terminating timed out worker: 16989
+[3748] ! Out-of-sync worker list, no 16989 worker
+[3748] ! Out-of-sync worker list, no 16987 worker
+[3748] - Worker 3 (pid: 17058) booted, phase: 0
+[3748] - Worker 0 (pid: 17056) booted, phase: 0
+[3748] - Worker 1 (pid: 17057) booted, phase: 0
+[3748] ! Terminating timed out worker: 17056
+[3748] ! Terminating timed out worker: 17057
+[3748] ! Terminating timed out worker: 17058
+[3748] - Worker 1 (pid: 17102) booted, phase: 0
+[3748] - Worker 3 (pid: 17103) booted, phase: 0
+[3748] - Worker 0 (pid: 17101) booted, phase: 0
+[3748] ! Terminating timed out worker: 16988
+[3748] ! Terminating timed out worker: 17101
+[3748] ! Terminating timed out worker: 17103
+[3748] ! Terminating timed out worker: 17114
+[3748] ! Terminating timed out worker: 17115
+[3748] ! Terminating timed out worker: 17116
+[3748] - Worker 0 (pid: 17134) booted, phase: 0
+[3748] - Worker 3 (pid: 17138) booted, phase: 0
+[3748] - Worker 2 (pid: 17136) booted, phase: 0
+[3748] ! Terminating timed out worker: 17102
+[3748] ! Terminating timed out worker: 17136
+[3748] ! Terminating timed out worker: 17138
+[3748] - Worker 2 (pid: 17249) booted, phase: 0
+[3748] - Worker 3 (pid: 17250) booted, phase: 0
+[3748] - Worker 1 (pid: 17248) booted, phase: 0
+[3748] ! Terminating timed out worker: 17248
+[3748] ! Terminating timed out worker: 17249
+[3748] ! Terminating timed out worker: 17250
+[3748] ! Out-of-sync worker list, no 17248 worker
+[3748] ! Out-of-sync worker list, no 17249 worker
+[3748] - Worker 3 (pid: 17609) booted, phase: 0
+[3748] - Worker 1 (pid: 17607) booted, phase: 0
+[3748] - Worker 2 (pid: 17608) booted, phase: 0
+[3748] ! Terminating timed out worker: 17607
+[3748] ! Terminating timed out worker: 17608
+[3748] ! Terminating timed out worker: 17609
+[3748] - Worker 1 (pid: 18592) booted, phase: 0
+[3748] - Worker 2 (pid: 18593) booted, phase: 0
+[3748] - Worker 3 (pid: 18594) booted, phase: 0
