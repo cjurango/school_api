@@ -63,3 +63,6 @@ gem 'pg'
 
 #puma
 gem 'puma'
+
+#resque
+gem 'resque'
