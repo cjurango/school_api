@@ -15,3 +15,9 @@
 /log/*
 !/log/.keep
 /tmp
+
+*.log
+
+shared/pids/puma.pid
+
+shared/pids/puma.state
