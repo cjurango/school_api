@@ -2,9 +2,9 @@
 
 <h1>Listing Grades</h1>
 
-<table>
+<table class="table table-bordered">
   <thead>
-    <tr>
+    <tr class="active">
       <th>Value</th>
       <th>Period</th>
       <th>Graduate</th>
@@ -28,8 +28,9 @@
 
 <br>
 
-<%= link_to 'New Grade', new_grade_path %>
+<%= link_to 'New Grade', new_grade_path, class: 'btn  btn-primary btn-sm' %>
 
+<br>
 <br>
 
 <svg id="grades"></svg>

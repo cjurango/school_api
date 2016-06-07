@@ -1,3 +1,5 @@
+require 'resque'
+
 class GradesController < ApplicationController
   before_action :set_grade, only: [:show, :edit, :update, :destroy]
 
@@ -28,6 +30,7 @@ class GradesController < ApplicationController
 
     respond_to do |format|
       if @grade.save
+        Resque.enqueue(Sleeper, 10)
         format.html { redirect_to @grade, notice: 'Grade was successfully created.' }
         format.json { render :show, status: :created, location: @grade }
       else

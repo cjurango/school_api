@@ -1,3 +1,5 @@
+require 'resque/server'
+
 Rails.application.routes.draw do
   resources :grades
   resources :graduates
@@ -58,4 +60,5 @@ Rails.application.routes.draw do
 
   mount API::Base, at: "/"
   mount GrapeSwaggerRails::Engine, at: "/documentation"
+  mount Resque::Server.new, at: "/resque"
 end
