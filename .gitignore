@@ -21,3 +21,5 @@
 shared/pids/puma.pid
 
 shared/pids/puma.state
+
+dump.rdb
